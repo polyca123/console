@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console</title>
+</head>
+<body>
+  <script>
+
+    // let a = 20
+    // let b = 10
+
+    // console.log('If a is the value 20')
+    // console.log('If b is the value 10')
+    // console.log('a + b = ' + (a + b))
+
+    // let c = 60
+    // let d = 5
+
+    // console.log('If c is the value 60')
+    // console.log('If d is the value 5')
+    // console.log('c - d = ' + (c - d))
+
+    // console.log('If a is the value 20')
+    // console.log('If d is the value 5')
+    // console.log('a * d = ' + (c * d))
+
+    // console.log('If b is the value 10')
+    // console.log('If c is the value 60')
+    // console.log('c / b = ' + (c / b))
+
+    // console.log('If a is the value 20')
+    // console.log('If d is the value 5')
+    // console.log('a^(d) = ' + (a ** d))
+
+    // let count = 0
+    // let movie = 'Star Wars'
+    // let song = 'Back In Black'
+    // let food = 'Ramen'
+    // let game = 'Legend of Zelda: Spirit Track'
+
+    // let question = prompt('What is your favorite movie?')
+    //   if (question === movie){
+    //     count++
+    //     console.log('Mine too')
+    //   }
+    //   else {
+    //     console.log('Not my favorite')
+    //   }
+    
+    // question = prompt('What is your favorite song?')
+    //   if (question === song) {
+    //     count++
+    //     console.log('Mine too')
+    //     }
+    //   else {
+    //     console.log('Not my favorite')
+    //     }
+
+    // question = prompt('What is your favorite food?')
+    //   if (question === food) {
+    //     count++
+    //     console.log('Mine too')
+    //   }
+    //   else {
+    //     console.log('Not my favorite')
+    //   }
+
+    // question = prompt('What is your favorite game?')
+    //   if (question === game) {
+    //     count++
+    //     console.log('Mine too')
+    //   }
+    //   else {
+    //     console.log('Not my favorite')
+    //   }
+
+    //   if (count ===4){
+    //     alert("Bestie?")
+    //   }
+    
+    // let answer = '7'
+    // let count = 0
+    
+    // let number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+    //   else {
+    //     alert('Wrong! Try again.')
+    //   }
+
+    // number = prompt('What is my favorite number?')
+    //   if (number === answer) {
+    //     alert('Correct!')
+    //     count++
+    //   }
+    //   else {
+    //     alert('Wrong! Game Over!')
+    //   }
+    //   alert(`Score ${count} / 10`)
+
+    let score = 0
+
+    for (let i = 0; i < 10; i++) {
+      let random = Math.floor(Math.random() * 10) + 1
+      let guess = prompt('Pick a number between 1 & 10')
+      if (random === parseInt(guess)) {
+      score++
+      alert('Correct!')  
+      } 
+      else {
+        alert('Incorrect!')
+      }
+    }
+    alert(`You got ${score} points!`)
+  </script>
+</body>
+</html>
