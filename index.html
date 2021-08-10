@@ -178,20 +178,63 @@
     //   }
     //   alert(`Score ${count} / 10`)
 
-    let score = 0
+    // let score = 0
 
-    for (let i = 0; i < 10; i++) {
-      let random = Math.floor(Math.random() * 10) + 1
-      let guess = prompt('Pick a number between 1 & 10')
-      if (random === parseInt(guess)) {
-      score++
-      alert('Correct!')  
-      } 
-      else {
-        alert('Incorrect!')
-      }
-    }
-    alert(`You got ${score} points!`)
+    // for (let i = 0; i < 10; i++) {
+    //   let random = Math.floor(Math.random() * 10) + 1
+    //   let guess = prompt('Pick a number between 1 & 10')
+    //   if (random === parseInt(guess)) {
+    //   score++
+    //   alert('Correct!')  
+    //   } 
+    //   else {
+    //     alert('Incorrect!')
+    //   }
+    // }
+    // alert(`You got ${score} points!`)
+
+    // let choices = ['r', 'p', 's']
+    // let win = 0
+    // let lose = 0
+    // let tie = 0
+
+    // for (let i = 0; i < 10; i++) { 
+    //   let player = prompt('r , p , s?')
+    //   let comp = choices[Math.floor(Math.random() * choices.length)]
+    //   console.log(comp)
+    //   if (choices.indexOf(player) !== -1) {
+    //     alert(`The computer choses ${comp}`)
+        
+    //     if (player === comp){
+    //       tie++
+    //       alert(`Tie! ${tie} ties`)
+    //     }else if ((player === 'r' && comp === 's') || (player === 's' && comp === 'p') || (player === 'p' && comp === 'r')) {
+    //       win++
+    //       alert(`Win! ${win} wins`)
+    //     }else {
+    //       lose++
+    //       alert(`Lose! ${lose} loses`)
+    //     }
+
+    //   } else {
+    //     alert('Invalid choice! Try Again.')
+    //     i--
+    //   }
+    // }
+
+
+
+      const add = (a , b) => console.log(a + b)
+      const sub = (a , b) => console.log(a - b)
+      const multi = (a , b) => console.log(a * b)
+      const div = (a , b) => console.log(a / b)
+
+      add(3, 6)
+      sub(5, 2)
+      multi(2, 10)
+      div(50, 5)
+    
+    
   </script>
 </body>
 </html>

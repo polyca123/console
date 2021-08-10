@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+  const theCobWeb = {
+    biggestWeb: {
+      item: 'comb',
+      biggerWeb: {
+        items: ['glasses', 'paperclip', 'bubblegum'],
+        smallerWeb: {
+          item: 'toothbrush',
+          tinyWeb: {
+            items: ['toenails', 'lint', 'wrapper', 'homework']
+          }
+        }
+      },
+      otherBigWeb: {
+        item: 'headphones'
+      }
+    }
+  }
+
+  alert(`I found my ${theCobWeb.biggestWeb.biggerWeb.items[0]}`)
+
+  alert(`I found my ${theCobWeb.biggestWeb.biggerWeb.smallerWeb.item}`)
+
+  alert(`I found my ${theCobWeb.biggestWeb.otherBigWeb.item}`)
+
+  alert(`I found my ${theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.items[3]}`)
+  
+  </script>
+
+</body>
+</html>
