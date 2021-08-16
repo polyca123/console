@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .image {
+      width: 400px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="">
+    <p>
+      <label>name</label>
+      <input type="text" id="name">
+    </p>
+    <p>
+      <label>hobbie</label>
+      <input type="text" id="hobbie">
+    </p>
+    <p>
+      <label>img</label>
+      <input type="text" id="img">
+    </p>
+    ​
+    <hr>
+    ​
+    <button id="submit">Submit</button>
+  </form>
+  ​
+  <hr>
+  ​
+  <div id="content">
+    <!-- This is the space we will populate with user responses -->
+  </div>
+
+  ​
+  <script>
+
+    document.getElementById('submit').addEventListener('click', event => {
+      event.preventDefault()
+
+      const name = document.getElementById('name').value
+      const hobbie = document.getElementById('hobbie').value
+      const img = document.getElementById('img').value
+
+      let userResElem = document.createElement('div')
+      userResElem.innerHTML = `
+        <h3>My Name is ${name}</h3>
+        <h3>and I like ${hobbie}</h3>
+        <img src="${img}" alt="${hobbie}" class="image">
+        <hr>
+      `
+
+      document.getElementById('content').append(userResElem)
+    })
+
+  </script>
+  ​
+</body>
+
+</html>

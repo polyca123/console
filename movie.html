@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Page Builder</title>
+</head>
+<body>
+  <form>
+    <p>
+      <label for="movie">Movie?</label>
+      <input type="text" name="movie" id="movie">
+    </p>
+    <button id="submit">Submit</button>
+  </form>
+  <div id="user"></div>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', event => {
+      event.preventDefault()
+
+      let movie = document.getElementById('movie').value
+
+      document.getElementById('user').innerHTML = `
+      <h3>${movie}</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg/220px-Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg" alt="image of Star Wars poster">
+      <p>
+        Star Wars: Episode III – Revenge of the Sith is a 2005 American epic space-opera film written and directed by George Lucas. It stars Ewan McGregor, Natalie Portman, Hayden Christensen, Ian McDiarmid, Samuel L. Jackson, Christopher Lee, Anthony Daniels, Kenny Baker and Frank Oz. It is the final installment in the Star Wars prequel trilogy, the third chapter in the Skywalker saga and the sixth Star Wars film to be released overall.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith">
+        Wiki Link
+      </a>
+      `
+
+      document.getElementById('movie').value = ''
+
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character</title>
+</head>
+<body>
+
+  attack (enemy, weapon ){
+  let percentage = (Math.floor((Math.random() * 100 + 1)))/100
+  
+  let weaponDamage = parseInt(weapon.strengthNum) * percentage
+  
+  
+  console.log(weaponDamage)
+  console.log(weapon.strengthNum)
+  
+  
+  
+  enemy.hp -= weaponDamage
+  console.log(enemy.hp)
+  
+  }
+
+  
+  <script>
+
+    let Player1 = {
+      name: 'Morax',
+      hp: 30,
+      race: 'Orc',
+      class: 'Barbarian',
+      weapon: 'Handaxe',
+      dmg: 8,
+      attack () {
+        console.log(this)
+        const strike = () => {
+          console.log(this)
+          console.log(`${this.name} swings with ${this.weapon} for ${this.dmg}`)
+          // console.log(Player1.dmg - Player2.hp)
+        }
+        console.log('Die puny human!')
+        strike()
+      }
+    }
+
+    let Player2 = {
+      name: 'Barad',
+      hp: 28,
+      race: 'Human',
+      class: 'Paladin',
+      weapon: 'Light hammer (4)',
+    }
+
+    Player1.attack()
+    console.log(Player2.hp - Player1.dmg)
+
+  </script>
+
+</body>
+</html>

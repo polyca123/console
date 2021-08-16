@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form>
+    <p>
+      <label for="title">Movie Title</label>
+      <input type="text" name="title" id="title">
+    </p>
+  </form>
+  <button id="submit">Submit</button>
+  <div id="movie"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+
+    $('#submit').click(event => {
+      event.preventDefault()
+
+      const title = $('#title').val()
+      
+
+      const userElem = $(`
+      <div>
+        <h1>${title}</h1>
+        <img src="${image}" alt="${title}"
+      </div>
+      `)
+    })
+
+  </script>
+</body>
+</html>

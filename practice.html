@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console</title>
+</head>
+<body>
+  
+  <div id="number">0</div>
+
+  <button id="addition">Add</button>
+  <button id="subtraction">Subtract</button>
+  <button id="reset">Reset</button>
+  <button id="9001">9001</button>
+
+  <Script>
+
+   let count = 0
+
+   document.getElementById('addition').addEventListener('click', () => {
+     count++
+     document.getElementById('number').textContent = count
+   })
+
+   document.getElementById('subtraction').addEventListener('click', () => {
+      count--
+      document.getElementById('number').textContent = count
+    })
+
+    document.getElementById('reset').addEventListener('click', () => {
+        count = 0
+        document.getElementById('number').textContent = 0
+    })
+
+    document.getElementById('9001').addEventListener('click', () => {
+        count = 9001
+        document.getElementById('number').textContent = 9001
+    })
+
+  </Script>
+
+</body>
+</html>
